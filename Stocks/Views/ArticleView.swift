@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import URLImage
 
 struct ArticleView: View {
     
@@ -35,6 +36,10 @@ struct ArticleView: View {
                                         .font(.subheadline)
                                 }
                                 Spacer()
+                                URLImage(URL(string: article.imageURL)!) { image in
+                                    image.resizable()
+                                }
+                                    .frame(width: 100, height: 100)
                             }
                         }
                     }
@@ -53,8 +58,8 @@ struct ArticleView_Previews: PreviewProvider {
         
         let article = Article(title: "News Title",
                               imageURL: "https://prod.static9.net.au/_/" +
-                              "media/2019/02/10/36/nine_news_melbourne_" +
-                              "1600x900_fullstory_nigtly6pm.jpg",
+                              "media/2019/09/02/10/36/nine_news_melbourne_" +
+                              "1600x900_fullstory_nightly6pm.jpg",
                               publication: "The WSJ")
         
         return ArticleView(articles: [ArticleViewModel(article: article)])

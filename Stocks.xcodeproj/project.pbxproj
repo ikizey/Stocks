@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,7 @@
 		977D66EA26B6EC8E00281A9D /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D66E926B6EC8E00281A9D /* Article.swift */; };
 		977D66ED26B6EEDA00281A9D /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D66EC26B6EEDA00281A9D /* ArticleViewModel.swift */; };
 		977D66F026B6F10F00281A9D /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D66EF26B6F10F00281A9D /* ArticleView.swift */; };
+		977D66F426B71C6200281A9D /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 977D66F326B71C6200281A9D /* URLImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				977D66F426B71C6200281A9D /* URLImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +149,9 @@
 			dependencies = (
 			);
 			name = Stocks;
+			packageProductDependencies = (
+				977D66F326B71C6200281A9D /* URLImage */,
+			);
 			productName = Stocks;
 			productReference = 977D66B926B6C8ED00281A9D /* Stocks.app */;
 			productType = "com.apple.product-type.application";
@@ -174,6 +179,9 @@
 				Base,
 			);
 			mainGroup = 977D66B026B6C8ED00281A9D;
+			packageReferences = (
+				977D66F226B71C6200281A9D /* XCRemoteSwiftPackageReference "url-image" */,
+			);
 			productRefGroup = 977D66BA26B6C8ED00281A9D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -398,6 +406,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		977D66F226B71C6200281A9D /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		977D66F326B71C6200281A9D /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 977D66F226B71C6200281A9D /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 977D66B126B6C8ED00281A9D /* Project object */;
 }
