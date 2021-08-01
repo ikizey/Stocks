@@ -11,16 +11,28 @@ import URLImage
 struct ArticleView: View {
     
     let articles: [ArticleViewModel]
+    let onDragBegin: (DragGesture.Value) -> Void
+    let onDragEnd: (DragGesture.Value) -> Void
     
     var body: some View {
         let screenSize = UIScreen.main.bounds.size
         return VStack(alignment: .leading) {
-            VStack(alignment: .leading) {
-                Text("Top News")
-                    .foregroundColor(.white)
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .padding(2)
+            HStack {
+                VStack(alignment: .leading) {
+                    Text("Top News")
+                        .foregroundColor(.white)
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .padding(2)           
+                }
+                Spacer()
+            }
+            .padding()
+            .contentShape(Rectangle())
+            .gesture(DragGesture()
+                        .onChanged(onDragBegin)
+                        .onEnded(onDragEnd)
+            )
                 
                 ScrollView {
                     VStack {
@@ -46,7 +58,7 @@ struct ArticleView: View {
                 }
                 .frame(maxWidth: .infinity)
             }
-        }
+        
         .frame(width: screenSize.width, height: screenSize.height)
         .background(Color(red: 27/255, green: 28/255, blue: 30/255))
         .cornerRadius(20)
@@ -62,7 +74,9 @@ struct ArticleView_Previews: PreviewProvider {
                               "1600x900_fullstory_nightly6pm.jpg",
                               publication: "The WSJ")
         
-        return ArticleView(articles: [ArticleViewModel(article: article)])
+        return ArticleView(articles: [ArticleViewModel(article: article)],
+                           onDragBegin: { _ in },
+                           onDragEnd: {_ in })
             .previewLayout(.sizeThatFits)
     }
 }
