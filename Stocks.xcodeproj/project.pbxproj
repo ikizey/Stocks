@@ -16,6 +16,8 @@
 		977D66D826B6CC7400281A9D /* StockListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D66D726B6CC7400281A9D /* StockListViewModel.swift */; };
 		977D66DC26B6CCA300281A9D /* StockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D66DB26B6CCA300281A9D /* StockViewModel.swift */; };
 		977D66E026B6D7FA00281A9D /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D66DF26B6D7FA00281A9D /* SearchView.swift */; };
+		977D66E426B6DCD200281A9D /* StockListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D66E326B6DCD200281A9D /* StockListView.swift */; };
+		977D66E726B6E4A000281A9D /* StockCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D66E626B6E4A000281A9D /* StockCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		977D66D726B6CC7400281A9D /* StockListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewModel.swift; sourceTree = "<group>"; };
 		977D66DB26B6CCA300281A9D /* StockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewModel.swift; sourceTree = "<group>"; };
 		977D66DF26B6D7FA00281A9D /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		977D66E326B6DCD200281A9D /* StockListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListView.swift; sourceTree = "<group>"; };
+		977D66E626B6E4A000281A9D /* StockCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				977D66DF26B6D7FA00281A9D /* SearchView.swift */,
+				977D66E326B6DCD200281A9D /* StockListView.swift */,
+				977D66E626B6E4A000281A9D /* StockCellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -186,12 +192,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				977D66BF26B6C8ED00281A9D /* ContentView.swift in Sources */,
+				977D66E426B6DCD200281A9D /* StockListView.swift in Sources */,
 				977D66BD26B6C8ED00281A9D /* StocksApp.swift in Sources */,
 				977D66D326B6CA8300281A9D /* Stock.swift in Sources */,
 				977D66E026B6D7FA00281A9D /* SearchView.swift in Sources */,
 				977D66DC26B6CCA300281A9D /* StockViewModel.swift in Sources */,
 				977D66CE26B6C96300281A9D /* Webservice.swift in Sources */,
 				977D66D826B6CC7400281A9D /* StockListViewModel.swift in Sources */,
+				977D66E726B6E4A000281A9D /* StockCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

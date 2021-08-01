@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var searchTerm = ""
+    @ObservedObject private var stockListViewModel = StockListViewModel()
     
     init() {
         UINavigationBar.appearance().backgroundColor = .black
@@ -18,6 +18,8 @@ struct ContentView: View {
         
         UITableView.appearance().backgroundColor = .black
         UITableViewCell.appearance().backgroundColor = .black
+        
+        stockListViewModel.load()
     }
     
     var body: some View {
@@ -32,8 +34,11 @@ struct ContentView: View {
                     .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 0))
                     .offset(y: -250)
                 
-                SearchView(searchTerm: $searchTerm)
+                SearchView(searchTerm: $stockListViewModel.searchTerm)
                     .offset(y: -200)
+                
+                StockListView(stocks: stockListViewModel.stocks)
+                    .offset(y: -90)
             }
                 .navigationTitle("Stocks")
         }.edgesIgnoringSafeArea(Edge.Set(.bottom))
