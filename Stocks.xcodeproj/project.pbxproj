@@ -20,6 +20,7 @@
 		977D66E726B6E4A000281A9D /* StockCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D66E626B6E4A000281A9D /* StockCellView.swift */; };
 		977D66EA26B6EC8E00281A9D /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D66E926B6EC8E00281A9D /* Article.swift */; };
 		977D66ED26B6EEDA00281A9D /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D66EC26B6EEDA00281A9D /* ArticleViewModel.swift */; };
+		977D66F026B6F10F00281A9D /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D66EF26B6F10F00281A9D /* ArticleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		977D66E626B6E4A000281A9D /* StockCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockCellView.swift; sourceTree = "<group>"; };
 		977D66E926B6EC8E00281A9D /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		977D66EC26B6EEDA00281A9D /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
+		977D66EF26B6F10F00281A9D /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				977D66DF26B6D7FA00281A9D /* SearchView.swift */,
 				977D66E326B6DCD200281A9D /* StockListView.swift */,
 				977D66E626B6E4A000281A9D /* StockCellView.swift */,
+				977D66EF26B6F10F00281A9D /* ArticleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				977D66EA26B6EC8E00281A9D /* Article.swift in Sources */,
 				977D66E026B6D7FA00281A9D /* SearchView.swift in Sources */,
 				977D66DC26B6CCA300281A9D /* StockViewModel.swift in Sources */,
+				977D66F026B6F10F00281A9D /* ArticleView.swift in Sources */,
 				977D66ED26B6EEDA00281A9D /* ArticleViewModel.swift in Sources */,
 				977D66CE26B6C96300281A9D /* Webservice.swift in Sources */,
 				977D66D826B6CC7400281A9D /* StockListViewModel.swift in Sources */,

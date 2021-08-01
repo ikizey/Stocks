@@ -39,6 +39,9 @@ struct ContentView: View {
                 
                 StockListView(stocks: stockListViewModel.stocks)
                     .offset(y: -90)
+                
+                ArticleView(articles: stockListViewModel.articles)
+                    .offset(y: 400)
             }
                 .navigationTitle("Stocks")
         }.edgesIgnoringSafeArea(Edge.Set(.bottom))
