@@ -15,6 +15,7 @@
 		977D66D326B6CA8300281A9D /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D66D226B6CA8300281A9D /* Stock.swift */; };
 		977D66D826B6CC7400281A9D /* StockListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D66D726B6CC7400281A9D /* StockListViewModel.swift */; };
 		977D66DC26B6CCA300281A9D /* StockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D66DB26B6CCA300281A9D /* StockViewModel.swift */; };
+		977D66E026B6D7FA00281A9D /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D66DF26B6D7FA00281A9D /* SearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		977D66D226B6CA8300281A9D /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		977D66D726B6CC7400281A9D /* StockListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewModel.swift; sourceTree = "<group>"; };
 		977D66DB26B6CCA300281A9D /* StockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewModel.swift; sourceTree = "<group>"; };
+		977D66DF26B6D7FA00281A9D /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		977D66BB26B6C8ED00281A9D /* Stocks */ = {
 			isa = PBXGroup;
 			children = (
+				977D66DE26B6D7E700281A9D /* Views */,
 				977D66D626B6CC5000281A9D /* ViewModels */,
 				977D66D126B6CA6C00281A9D /* Models */,
 				977D66CC26B6C95000281A9D /* Services */,
@@ -103,6 +106,14 @@
 				977D66DB26B6CCA300281A9D /* StockViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		977D66DE26B6D7E700281A9D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				977D66DF26B6D7FA00281A9D /* SearchView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +188,7 @@
 				977D66BF26B6C8ED00281A9D /* ContentView.swift in Sources */,
 				977D66BD26B6C8ED00281A9D /* StocksApp.swift in Sources */,
 				977D66D326B6CA8300281A9D /* Stock.swift in Sources */,
+				977D66E026B6D7FA00281A9D /* SearchView.swift in Sources */,
 				977D66DC26B6CCA300281A9D /* StockViewModel.swift in Sources */,
 				977D66CE26B6C96300281A9D /* Webservice.swift in Sources */,
 				977D66D826B6CC7400281A9D /* StockListViewModel.swift in Sources */,
