@@ -13,6 +13,8 @@
 		977D66C426B6C8EE00281A9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 977D66C326B6C8EE00281A9D /* Preview Assets.xcassets */; };
 		977D66CE26B6C96300281A9D /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D66CD26B6C96300281A9D /* Webservice.swift */; };
 		977D66D326B6CA8300281A9D /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D66D226B6CA8300281A9D /* Stock.swift */; };
+		977D66D826B6CC7400281A9D /* StockListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D66D726B6CC7400281A9D /* StockListViewModel.swift */; };
+		977D66DC26B6CCA300281A9D /* StockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D66DB26B6CCA300281A9D /* StockViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		977D66C526B6C8EE00281A9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		977D66CD26B6C96300281A9D /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		977D66D226B6CA8300281A9D /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		977D66D726B6CC7400281A9D /* StockListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewModel.swift; sourceTree = "<group>"; };
+		977D66DB26B6CCA300281A9D /* StockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		977D66BB26B6C8ED00281A9D /* Stocks */ = {
 			isa = PBXGroup;
 			children = (
+				977D66D626B6CC5000281A9D /* ViewModels */,
 				977D66D126B6CA6C00281A9D /* Models */,
 				977D66CC26B6C95000281A9D /* Services */,
 				977D66BC26B6C8ED00281A9D /* StocksApp.swift */,
@@ -89,6 +94,15 @@
 				977D66D226B6CA8300281A9D /* Stock.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		977D66D626B6CC5000281A9D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				977D66D726B6CC7400281A9D /* StockListViewModel.swift */,
+				977D66DB26B6CCA300281A9D /* StockViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,7 +177,9 @@
 				977D66BF26B6C8ED00281A9D /* ContentView.swift in Sources */,
 				977D66BD26B6C8ED00281A9D /* StocksApp.swift in Sources */,
 				977D66D326B6CA8300281A9D /* Stock.swift in Sources */,
+				977D66DC26B6CCA300281A9D /* StockViewModel.swift in Sources */,
 				977D66CE26B6C96300281A9D /* Webservice.swift in Sources */,
+				977D66D826B6CC7400281A9D /* StockListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
